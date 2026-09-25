@@ -2,18 +2,7 @@
 @config "../../tailwind.config.ts";
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-public-sans);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
+  --font-sans: var(--font-roboto);
 }
 
 @media (prefers-reduced-motion: reduce) {

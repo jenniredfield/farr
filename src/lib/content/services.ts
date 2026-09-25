@@ -29,7 +29,7 @@ export const services: Service[] = [
   {
     slug: "epcs-existing-property",
     name: "EPCs for Existing Property",
-    summary: "Residential EPCs from £65.00. Commercial EPCs from £225.00.",
+    summary: "Residential and commercial EPCs available.",
     image: {
       src: "https://images.unsplash.com/photo-1730807908064-c087959dd52c",
       alt: "House with solar panels on the roof",

@@ -10,7 +10,7 @@ export function ProjectShowcase() {
           <h2 className="text-3xl font-semibold tracking-tight text-secondary-900">
             Previous projects
           </h2>
-          <p className="mt-2 max-w-2xl text-secondary-600">
+          <p className="mt-2 max-w-2xl text-secondary-700">
             Illustrative examples — placeholder details, standing in until
             real case studies are supplied.
           </p>
@@ -18,8 +18,8 @@ export function ProjectShowcase() {
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
           {projects.map((project, index) => (
             <RevealOnScroll key={project.slug} delayMs={index * 100}>
-              <article className="flex h-full flex-col overflow-hidden bg-white shadow-lg">
-                <div className="relative h-48 w-full">
+              <article>
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Image
                     src={project.image.src}
                     alt={project.image.alt}
@@ -28,20 +28,12 @@ export function ProjectShowcase() {
                     className="object-cover"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-primary-600">
-                    {project.sector}
-                  </p>
-                  <h3 className="mt-2 text-lg font-semibold text-secondary-900">
-                    {project.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-secondary-600">
-                    {project.challenge}
-                  </p>
-                  <p className="mt-3 text-sm font-medium text-secondary-900">
-                    {project.outcome}
-                  </p>
-                </div>
+                <h3 className="mt-5 text-lg font-semibold text-secondary-900">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-sm text-secondary-700">
+                  {project.outcome}
+                </p>
               </article>
             </RevealOnScroll>
           ))}
