@@ -59,7 +59,7 @@ export default function ServicesPage() {
                       src={service.image.src}
                       alt={service.image.alt}
                       fill
-                      sizes="(min-width: 640px) 128px, 96px"
+                      sizes="(min-width: 640px) 192px, 144px"
                       className="object-cover"
                     />
                   </div>
